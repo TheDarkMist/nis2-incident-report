@@ -26,8 +26,7 @@ Every draft opens with a "Gaps to fill before sending" checklist and ends with a
 
 ### Claude Code
 
-Copy the `nis2-incident-report/` folder into your skills directory (or unzip
-`nis2-incident-report.skill`, which is a zip archive, into the same place):
+Copy the `nis2-incident-report/` folder into your skills directory:
 
 - per project: `<project>/.claude/skills/nis2-incident-report/`
 - global: `~/.claude/skills/nis2-incident-report/`
@@ -36,7 +35,9 @@ Restart Claude Code. The skill triggers on its own when you describe a NIS2 inci
 
 ### claude.ai
 
-Settings > Capabilities > Skills, then upload `nis2-incident-report.skill`.
+Download the `nis2-incident-report/` folder and zip it so the archive contains
+`nis2-incident-report/SKILL.md` at its top level, rename the archive to
+`nis2-incident-report.skill`, then upload it under Settings > Capabilities > Skills.
 
 ## Use it
 
