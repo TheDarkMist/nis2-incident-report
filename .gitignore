@@ -1,8 +1,0 @@
-# Whitelist: this folder is the private talk workspace; the git repo publishes
-# ONLY the giveaway files. Everything else (speech, STORICO, CLAUDE.md, slides,
-# eval workspace, scratch) is ignored and never pushed.
-/*
-!/.gitignore
-!/README.md
-!/nis2-incident-report
-!/nis2-incident-playbook.pdf
