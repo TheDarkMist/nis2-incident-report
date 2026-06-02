@@ -1,8 +1,8 @@
 # NIS2 report templates
 
 The four reports NIS2 asks for, with the legal basis and the exact fields to draft. Keep to
-the fields the law asks for, no padding. Each clock counts from the moment the entity
-becomes aware of the incident.
+the fields the law asks for, no padding. The 24h and 72h clocks count from the moment the
+entity becomes aware of the incident; the final-report clock runs from the 72h notification.
 
 ## Contents
 
@@ -47,7 +47,7 @@ DRAFT, requires human review and sign-off.
 ## Notification (72h)
 
 **Legal basis:** Art. 23(4)(b). Due within 72 hours of becoming aware. The authority may
-request an intermediate report at any time before day 30.
+request an intermediate report (Art. 23(4)(c)) at any time before the final report is due.
 
 Builds on the early warning with substance:
 
@@ -77,7 +77,8 @@ DRAFT, requires human review and sign-off.
 
 ## Final / progress report (30d)
 
-**Legal basis:** Art. 23(4)(c). Due by day 30.
+**Legal basis:** Art. 23(4)(d). The final report is due within one month of the 72h
+notification.
 
 Which template you use depends on whether the incident is closed.
 
@@ -129,7 +130,7 @@ DRAFT, requires human review and sign-off.
 
 ## User-protection notice
 
-**Legal basis:** Art. 23(2). Send without undue delay when users can take a concrete
+**Legal basis:** Art. 23(1)-(2). Send without undue delay when users can take a concrete
 action to protect themselves: change a password, rotate an API key, watch for phishing.
 
 In supply chain, the regulated client is the sender; the technical content comes from the

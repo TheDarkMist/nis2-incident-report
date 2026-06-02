@@ -32,18 +32,19 @@ in the loop by design.
 
 ## Step 1: Identify which report is due
 
-NIS2 does not ask for one report; it asks for a sequence with hard deadlines that all
-count **from the moment the entity becomes aware** of the incident. Work out which one the
-user needs before drafting anything. If it is unclear, ask.
+NIS2 does not ask for one report; it asks for a sequence with hard deadlines. The 24-hour
+and 72-hour clocks both count **from the moment the entity becomes aware** of the incident;
+the final-report clock runs from the 72-hour notification. Work out which one the user needs
+before drafting anything. If it is unclear, ask.
 
 | Report | Deadline | Legal basis | In one line |
 | --- | --- | --- | --- |
-| **Early warning** | within 24h | Art. 23(4)(a) | An alert, not a confession. Four fields, kept short. |
-| **Notification** | within 72h | Art. 23(4)(b) | Severity, indicators of compromise, mitigations so far. |
-| **Final / progress report** | by day 30 | Art. 23(4)(c) | Final report if closed; monthly progress report if still open. |
-| **User-protection notice** | without undue delay | Art. 23(2) | Tell affected users the one concrete action to take. |
+| **Early warning** | within 24h of becoming aware | Art. 23(4)(a) | An alert, not a confession. Four fields, kept short. |
+| **Notification** | within 72h of becoming aware | Art. 23(4)(b) | Severity, indicators of compromise, mitigations so far. |
+| **Final / progress report** | within 1 month of the 72h notification | Art. 23(4)(d) | Final report if closed; monthly progress report if still open. |
+| **User-protection notice** | without undue delay | Art. 23(1)-(2) | Tell affected users the one concrete action to take. |
 
-The authority may also request an intermediate report at any point before day 30.
+The authority may also request an intermediate report at any point before the final report (Art. 23(4)(c)).
 
 ## Step 2: Gather the incident notes
 
@@ -55,8 +56,8 @@ the difference matters in a regulatory document.
 - `became_aware`: date, time, time zone (this starts every clock)
 - `our_role`: `regulated entity` or `supply chain`
 - `regulated_client`: name, jurisdiction, in scope (yes / no)
-- `triage`: malicious cause suspected? service down over 30 min? personal data exposed?
-  client is a regulated entity? (yes / no each)
+- `triage`: malicious cause suspected? service seriously disrupted (down for hours)?
+  personal data exposed? unauthorised access gained? (yes / no each)
 - `timeline`: list of `{ time, event }`
 - `impacted_services`: what was affected
 - `data_involved`: data types touched; mark clearly if personal data

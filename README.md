@@ -9,14 +9,13 @@ Built as the giveaway for the WordCamp Europe 2026 lightning talk
 
 ## What it does
 
-NIS2 (Directive (EU) 2022/2555) does not ask for one report. It asks for a sequence with
-hard deadlines that all count from the moment you become aware of the incident. This skill
-drafts each one:
+NIS2 (Directive (EU) 2022/2555) does not ask for one report. It asks for a sequence of
+reports with hard deadlines. This skill drafts each one:
 
-- **Early warning**, within 24 hours (Art. 23(4)(a))
-- **Notification**, within 72 hours (Art. 23(4)(b))
-- **Final or progress report**, by day 30 (Art. 23(4)(c))
-- **User-protection notice**, without undue delay (Art. 23(2))
+- **Early warning**, within 24 hours of becoming aware (Art. 23(4)(a))
+- **Notification**, within 72 hours of becoming aware (Art. 23(4)(b))
+- **Final or progress report**, within one month of the 72-hour notification (Art. 23(4)(d))
+- **User-protection notice**, without undue delay (Art. 23(1)-(2))
 
 It always produces a **first draft**. A human reads it, fills the gaps, and decides whether
 and when to send. The skill never sends anything and never decides on the client's behalf.
